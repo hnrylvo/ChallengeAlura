@@ -21,7 +21,7 @@ function BtnEncrypt() {
 }
 
 function Encriptar(textoEncriptado) {
-    let codeKeys = [["e", "enter"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+    let codeKeys = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
     textoEncriptado = textoEncriptado.toLowerCase();
 
     for (let i = 0; i < codeKeys.length; i++) {
