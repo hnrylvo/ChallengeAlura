@@ -41,7 +41,7 @@ function BtnDecrypt() {
 }
 
 function Desencriptar(textoDesencriptado) {
-    let codeKeys = [["e", "enter"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+    let codeKeys = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
     textoDesencriptado = textoDesencriptado.toLowerCase();
 
     for (let i = 0; i < codeKeys.length; i++) {
