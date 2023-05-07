@@ -1,0 +1,163 @@
+*{
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #E5E5E5;
+}
+
+header {
+    position: absolute;
+    top: 35px;
+}
+
+main {
+    display: flex;
+    margin-left: 200px;
+    margin-bottom: 80px;
+}
+
+.input {
+    background: transparent;
+    position: absolute;
+    color: #0A3871;
+    border: none;
+    resize: none;
+    font-size: 28px;
+    width: 577px;
+    height: 470px;
+    top: 125px;
+    text-transform: lowercase;
+}
+
+textarea:focus{
+    outline:none;
+}
+
+textarea:disabled{
+    background-color: transparent;
+}
+
+textarea::placeholder {
+    color: #0A3871;
+    opacity: 0.8;
+}
+
+.texto {
+    position: absolute;
+    margin: 6px 0;
+    color: #495057;
+    font-size: 11px;
+    top: 651px; 
+}
+
+.buttons {
+    display: flex;
+    position: absolute;
+    width: auto;
+    top: 680px;
+}
+
+.btnEncrypt, .btnDecrypt {
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btnEncrypt {
+    background-color: #0A3871; 
+    color: #D8DFE8;
+    border: none;
+    margin-right: 12px;
+}
+
+.btnDecrypt {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    color:#0A3871;
+    margin-left: 12px;
+}
+
+.btnEncrypt:hover, .btnDecrypt:hover, .copiar:hover{
+    scale: 1.01;
+}
+
+.resultado {
+    top: 25px;
+    left: 825px;
+    padding-left: 15px;
+}
+
+.informacion {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 22px;
+    align-items: center;
+    top: 110px;
+}
+
+.muneco { 
+    width: 300px;
+    height: 268px;
+}
+
+.no-mensaje{
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.ingrese-texto {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #495057;
+}
+
+.output {
+    position: absolute;
+    background: white;
+    border-radius: 24px;
+    padding-left: 15px;
+    padding-top: 20px;
+    border: none;
+    resize: none;
+    color: #0A3871;
+    font-size: 23px;
+    width: 325px;
+    height: 690px;
+    align-items: center;
+    text-transform: lowercase;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.output:focus {
+    outline: none;
+}
+
+.copiar {
+    display: none;
+    width: 250px;
+    height: 55px;
+    border-radius: 24px;
+    margin-left: 46px;
+    margin-top: 640px;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 16px;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+.ocultar {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
