@@ -56,7 +56,7 @@ textarea::placeholder {
     display: flex;
     position: absolute;
     width: auto;
-    top: 680px;
+    top: 670px;
 }
 
 .btnEncrypt, .btnDecrypt {
@@ -154,10 +154,19 @@ textarea::placeholder {
     border: 1px solid #0A3871;
 }
 
+.creditos {
+    position: absolute;
+    color: #495057;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    top: 760px;
+    left: 470px;
+}
+
 .ocultar {
     display: none;
 }
 
 .mostrar {
     display: block;
-}
+} 
