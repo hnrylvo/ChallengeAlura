@@ -10,11 +10,11 @@ body {
 header {
     position: absolute;
     top: 35px;
+    left: 40px;
 }
 
 main {
     display: flex;
-    margin-left: 200px;
     margin-bottom: 80px;
 }
 
@@ -28,6 +28,7 @@ main {
     width: 577px;
     height: 470px;
     top: 125px;
+    left: 200px;
     text-transform: lowercase;
 }
 
@@ -50,13 +51,14 @@ textarea::placeholder {
     color: #495057;
     font-size: 11px;
     top: 651px; 
+    left: 200px;
 }
 
 .buttons {
     display: flex;
     position: absolute;
-    width: auto;
     top: 670px;
+    left: 200px;
 }
 
 .btnEncrypt, .btnDecrypt {
@@ -98,6 +100,7 @@ textarea::placeholder {
     margin-left: 22px;
     align-items: center;
     top: 110px;
+    left: 200px;
 }
 
 .muneco { 
@@ -110,6 +113,7 @@ textarea::placeholder {
     font-weight: bold;
     font-size: 18px;
     text-align: center;
+    width: 175px;
 }
 
 .ingrese-texto {
@@ -117,10 +121,12 @@ textarea::placeholder {
     text-align: center;
     font-size: 12px;
     color: #495057;
+    width: 205px;
 }
 
 .output {
     position: absolute;
+    left: 200px;
     background: white;
     border-radius: 24px;
     padding-left: 15px;
@@ -152,14 +158,17 @@ textarea::placeholder {
     font-size: 16px;
     color: #0A3871;
     border: 1px solid #0A3871;
+    left: 186px;
 }
 
 .creditos {
+    width: 210px;
+    height: 25px;
     position: absolute;
     color: #495057;
     font-family: 'Inter', sans-serif;
     font-size: 12px;
-    top: 760px;
+    top: 755px;
     left: 470px;
 }
 
@@ -170,3 +179,106 @@ textarea::placeholder {
 .mostrar {
     display: block;
 } 
+
+/* CSS para celulares */
+
+@media screen and (max-width:480px) {
+
+    .logo {
+        position: absolute;
+        width: 75px;
+        height: 115px;
+        top: 25px;
+        left: 16px;
+    }
+
+    .input {
+        width: 671px;
+        left: 45px;
+        top: 400px;
+        font-size: 55px;
+    }
+
+    .texto {
+        top: 1250px;
+        font-size: 25px;
+        width: 705px;
+        left: 49px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        top: 1295px;
+        left: 45px;
+    }
+
+    .btnEncrypt, .btnDecrypt {
+        font-size: 30px;
+        width: 665px;
+        height: 120px;
+        border-radius: 45px;
+    }
+
+    .btnDecrypt {
+        margin-left: 0px;
+    }
+
+    .resultado {
+        top: 1680px;
+        left: 45px;
+        height: 700px;
+        
+    }
+
+    .output {
+        width: 630px;
+        height: 725px;
+        left: 5px;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.09);
+        border-radius: 45px;
+        font-size: 42px;
+        padding-right: 15px;
+    }
+
+    .muneco {
+        display: none;
+    }
+
+    .informacion {
+        width: 192px;
+        top: 335px;
+    }
+
+    .no-mensaje {
+        margin-top: -20px;
+        font-size: 40px;
+        width: 455px;
+    }
+
+    .ingrese-texto {
+        font-size: 27px;
+        width: 320px;
+    }
+
+    .copiar {
+        width: 400px;
+        height: 105px;
+        font-size: 27px;
+        left: 114px;
+        margin-left: 0px;
+        top: -20px;
+    }
+
+    .creditos {
+        font-size: 23px;
+        top: 2500px;
+        height: 65px;
+        width: 295px;
+        left: 210px;
+    }
+
+}
